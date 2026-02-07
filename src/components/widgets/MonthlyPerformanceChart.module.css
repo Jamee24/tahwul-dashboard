@@ -1,0 +1,101 @@
+.widget {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 24px 0;
+}
+
+.chartContainer {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+.yAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #9CA3AF;
+  padding: 8px 0;
+  min-width: 30px;
+}
+
+.chart {
+  flex: 1;
+  position: relative;
+  min-height: 250px;
+}
+
+.gridLines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.gridLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #F3F4F6;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.barContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.bar {
+  width: 100%;
+  max-width: 40px;
+  background: linear-gradient(to bottom, #3B82F6 0%, rgba(59, 130, 246, 0.1) 100%);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.barGradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #3B82F6 0%, rgba(59, 130, 246, 0.3) 50%, rgba(59, 130, 246, 0.05) 100%);
+  border-radius: 4px 4px 0 0;
+}
+
+.monthLabel {
+  font-size: 11px;
+  color: #6B7280;
+  white-space: nowrap;
+  text-align: center;
+}

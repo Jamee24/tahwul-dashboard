@@ -1,0 +1,1 @@
+export { PerspectiveDetails } from './PerspectiveDetails';

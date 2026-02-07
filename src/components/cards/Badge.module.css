@@ -1,0 +1,62 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* Status variants */
+.approved {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.pending {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.inProgress {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+.underReview {
+  background-color: #E0E7FF;
+  color: #3730A3;
+}
+
+.completed {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.rejected {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.notStarted {
+  background-color: #F3F4F6;
+  color: #4B5563;
+}
+
+/* Priority variants */
+.high {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.medium {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.low {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}

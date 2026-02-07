@@ -1,0 +1,26 @@
+.statsCards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+@media (max-width: 1400px) {
+  .statsCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .statsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .statsCards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 12px 0;
+  }
+}

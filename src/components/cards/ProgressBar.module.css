@@ -1,0 +1,45 @@
+.progressBar {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.percentage {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.track {
+  width: 100%;
+  height: 8px;
+  background-color: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: #3B82F6;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.small .track {
+  height: 6px;
+}
+
+.large .track {
+  height: 12px;
+}

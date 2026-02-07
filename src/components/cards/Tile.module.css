@@ -1,0 +1,31 @@
+.tile {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 16px;
+    background: white;
+    border: 1px solid #E6EAF0;
+    border-radius: 10px;
+    height: 80px;
+    box-sizing: border-box;
+    width: 240px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.4;
+}

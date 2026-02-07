@@ -1,0 +1,56 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #E5E7EB;
+  gap: 16px;
+}
+
+.headerContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 4px 0 0 0;
+}
+
+.headerAction {
+  flex-shrink: 0;
+}
+
+.cardContent {
+  padding: 24px;
+  color: #374151;
+}
+
+.cardContentNoPadding {
+  color: #374151;
+}
+
+.cardFooter {
+  padding: 16px 24px;
+  border-top: 1px solid #E5E7EB;
+  background: #F9FAFB;
+}
