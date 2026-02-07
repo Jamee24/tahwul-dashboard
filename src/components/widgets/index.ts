@@ -1,4 +1,3 @@
-export { ActivityFeed } from './ActivityFeed';
 export { LeaderBoard } from './LeaderBoard';
 export { PerspectiveGrid } from './PerspectiveGrid';
 export { ProjectTimeline } from './ProjectTimeline';
