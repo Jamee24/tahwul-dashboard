@@ -17,3 +17,5 @@ export const StatsCardsWidget: React.FC = () => {
     </div>
   );
 };
+
+export default StatsCardsWidget;

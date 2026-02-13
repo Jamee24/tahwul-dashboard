@@ -51,3 +51,5 @@ export const AuditReadinessSection: React.FC = () => {
     </div>
   );
 };
+
+export default AuditReadinessSection;

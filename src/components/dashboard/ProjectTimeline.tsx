@@ -5,3 +5,5 @@ import { dashboardData } from '../../data/dashboard';
 export const ProjectTimeline: React.FC = () => {
   return <Timeline phases={dashboardData.timeline} title="Project Timeline" />;
 };
+
+export default ProjectTimeline;

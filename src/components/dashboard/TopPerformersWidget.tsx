@@ -63,13 +63,11 @@ const leaders: Leader[] = [
 export const TopPerformersWidget: React.FC = () => {
   return (
     <div className={styles.widget}>
-      <h3 className={styles.title}>Top Performing Perspective Leaders</h3>
+      <h3 className={styles.title}>Top Performers</h3>
       <div className={styles.leadersList}>
         {leaders.map((leader) => (
           <div key={leader.id} className={styles.leaderItem}>
-            <div className={styles.avatar} role="img" aria-label={leader.name}>
-              {leader.avatar}
-            </div>
+            <div className={styles.avatar}>{leader.avatar}</div>
             <div className={styles.leaderInfo}>
               <div className={styles.leaderName}>{leader.name}</div>
               <div className={styles.leaderPerspective}>{leader.perspective}</div>
@@ -81,3 +79,5 @@ export const TopPerformersWidget: React.FC = () => {
     </div>
   );
 };
+
+export default TopPerformersWidget;

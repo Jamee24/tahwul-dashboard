@@ -1,0 +1,171 @@
+.evidenceDetails {
+  width: 100%;
+}
+
+.mainGrid {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tableSection {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  display: flex;
+  gap: 24px;
+}
+
+.commentsSection {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-height: 600px;
+  overflow-y: auto;
+  flex: 1
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 20px 0;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #F9FAFB;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.commentAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3B82F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.commentContent {
+  flex: 1;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.commentAuthor {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.commentTime {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.commentText {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.commentEvidence {
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.activitiesWidget {
+  min-height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainGrid {
+    gap: 16px;
+  }
+
+  .mainContent {
+    gap: 16px;
+  }
+
+  .tableSection {
+    padding: 16px;
+  }
+
+  .commentsSection {
+    padding: 16px;
+    max-height: 400px;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .comment {
+    padding: 12px;
+  }
+
+  .commentAvatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .commentAuthor {
+    font-size: 13px;
+  }
+
+  .commentText {
+    font-size: 13px;
+  }
+}

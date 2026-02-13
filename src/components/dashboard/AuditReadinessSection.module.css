@@ -7,10 +7,34 @@
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .widget {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    padding: 12px;
+  }
+}
+
 .title {
   font-size: 16px;
   font-weight: 700;
   color: #1F2937;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 13px;
+  }
 }
 
 .chartContainer {
@@ -50,12 +74,58 @@
   font-weight: 400;
 }
 
+@media (max-width: 1024px) {
+  .scoreValue {
+    font-size: 36px;
+  }
+
+  .scoreLabel {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scoreValue {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scoreValue {
+    font-size: 28px;
+  }
+
+  .scoreLabel {
+    font-size: 10px;
+  }
+}
+
 .metricsContainer {
   display: flex;
   justify-content: space-around;
   gap: 24px;
   border-top: 1px solid #E0E8ED;
   padding-top: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .metricsContainer {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .metricsContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .metricsContainer {
+    gap: 8px;
+  }
 }
 
 .metricItem {
@@ -77,4 +147,30 @@
   color: #6B7280;
   font-weight: 400;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .metricValue {
+    font-size: 28px;
+  }
+
+  .metricLabel {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .metricValue {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .metricValue {
+    font-size: 20px;
+  }
+
+  .metricLabel {
+    font-size: 10px;
+  }
 }

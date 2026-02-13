@@ -59,3 +59,5 @@ export const ProgressGrid: React.FC = () => {
     </div>
   );
 };
+
+export default ProgressGrid;

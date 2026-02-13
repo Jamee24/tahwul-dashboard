@@ -7,11 +7,37 @@
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .widget {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    padding: 12px;
+  }
+}
+
 .title {
   font-size: 16px;
   font-weight: 700;
   color: #1F2937;
   margin: 0 0 24px 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
 }
 
 .chartContainer {
@@ -50,4 +76,30 @@
   font-size: 14px;
   color: #6B7280;
   font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .scoreValue {
+    font-size: 38px;
+  }
+
+  .scoreLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scoreValue {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scoreValue {
+    font-size: 28px;
+  }
+
+  .scoreLabel {
+    font-size: 11px;
+  }
 }

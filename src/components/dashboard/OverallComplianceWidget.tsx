@@ -41,3 +41,5 @@ export const OverallComplianceWidget: React.FC = () => {
     </div>
   );
 };
+
+export default OverallComplianceWidget;

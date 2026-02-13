@@ -45,3 +45,5 @@ export const MonthlyPerformanceChart: React.FC = () => {
     </div>
   );
 };
+
+export default MonthlyPerformanceChart;

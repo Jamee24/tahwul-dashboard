@@ -2,11 +2,24 @@ import React from 'react';
 import { getCurrentUser } from '../../data/users';
 import styles from './Navbar.module.css';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onMenuClick?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
   const user = getCurrentUser();
 
   return (
     <nav className={styles.navbar}>
+      <button 
+        className={styles.hamburger}
+        onClick={onMenuClick}
+        aria-label="Toggle menu"
+      >
+        <span className={styles.hamburgerLine}></span>
+        <span className={styles.hamburgerLine}></span>
+        <span className={styles.hamburgerLine}></span>
+      </button>
       <div className={styles.searchContainer}>
         <span className={styles.searchIcon}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

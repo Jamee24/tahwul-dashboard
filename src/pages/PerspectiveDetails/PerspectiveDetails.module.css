@@ -11,14 +11,13 @@
 }
 
 .titleSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 24px;
-    background: white;
-    border-radius: 10px;
-    padding: 16px;
-    border: 1px solid #E0E8ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #E0E8ED;
 }
 
 .breadcrumb {
@@ -30,6 +29,21 @@
     border-radius: 30px;
     border: 1px solid #E0E8ED;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 11px;
+    padding: 8px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
 }
 
 .pageTitle {
@@ -45,6 +59,27 @@
     margin: 0;
     line-height: 1.5;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .pageSubtitle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 14px;
+  }
+
+  .pageSubtitle {
+    font-size: 12px;
+  }
 }
 
 .scoreCircle {
@@ -64,11 +99,43 @@
   color: #10B981;
 }
 
+@media (max-width: 1024px) {
+  .scoreCircle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .scoreText {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scoreCircle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .scoreText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scoreCircle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .scoreText {
+    font-size: 18px;
+  }
+}
+
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .statCard {
@@ -109,6 +176,7 @@
     width: 232px;
     border-radius: 8px;
     padding: 6px;
+    flex-wrap: wrap;
 }
 
 .tab {
@@ -124,6 +192,39 @@
   transition: all 0.2s;
 }
 
+@media (max-width: 1024px) {
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
 .tab:hover {
   color: #1F2937;
 }
@@ -137,7 +238,6 @@
   background: white;
   border-radius: 12px;
   padding: 24px;
-  margin-bottom: 24px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -204,6 +304,7 @@
 .leadersList {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .leaderCard {
@@ -213,6 +314,36 @@
     padding: 12px;
     border-radius: 8px;
     background: #F5F8FA;
+}
+
+@media (max-width: 1024px) {
+  .leadersList {
+    gap: 12px;
+  }
+
+  .leaderCard {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leadersList {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .leaderCard {
+    padding: 8px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderCard {
+    padding: 6px;
+    gap: 6px;
+  }
 }
 
 .leaderAvatar {
@@ -257,6 +388,32 @@
   gap: 24px;
 }
 
+@media (max-width: 1024px) {
+  .activitiesWidget {
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activitiesWidget {
+    width: 100%;
+  }
+
+  .mainContent {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activitiesWidget {
+    min-height: 250px;
+  }
+
+  .mainContent {
+    gap: 12px;
+  }
+}
+
 .tableSection {
   background: white;
   border-radius: 8px;
@@ -284,6 +441,40 @@
     max-height: 600px;
     overflow-y: auto;
     flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    gap: 20px;
+  }
+
+  .commentsSection {
+    padding: 20px;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .commentsSection {
+    padding: 16px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    gap: 12px;
+  }
+
+  .commentsSection {
+    padding: 12px;
+    max-height: 300px;
+  }
 }
 
 .comment {

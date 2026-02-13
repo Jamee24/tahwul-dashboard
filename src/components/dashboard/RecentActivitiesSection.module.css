@@ -7,11 +7,37 @@
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .widget {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    padding: 12px;
+  }
+}
+
 .title {
   font-size: 16px;
   font-weight: 700;
   color: #1F2937;
   margin: 0 0 16px 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
 }
 
 .activitiesList {
@@ -25,6 +51,20 @@
   align-items: flex-start;
   padding: 14px 0;
   border-top: 1px solid #E5E7EB;
+}
+
+@media (max-width: 768px) {
+  .activityItem {
+    gap: 8px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .activityItem {
+    gap: 6px;
+    padding: 8px 0;
+  }
 }
 
 .dot {
@@ -47,7 +87,25 @@
     font-size: 14px;
     color: #374151;
     line-height: 1.5;
-    width: 340px;
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+  .activityText {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activityText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activityText {
+    font-size: 11px;
+  }
 }
 
 .activityTime {

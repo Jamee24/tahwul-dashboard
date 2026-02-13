@@ -8,7 +8,7 @@ import {
   MonthlyPerformanceChart,
   AuditReadinessSection,
   StatsCardsWidget
-} from '../../components/widgets';
+} from '../../components/dashboard';
 import styles from './Dashboard.module.css';
 
 export const Dashboard: React.FC = () => {

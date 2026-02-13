@@ -28,23 +28,6 @@ export interface User {
   department?: string;
 }
 
-export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  status: StatusType;
-  progress: number;
-  startDate: string;
-  endDate: string;
-  priority: PriorityLevel;
-  perspective: PerspectiveType;
-  leaders: User[];
-  objectives: string[];
-  requirements: string[];
-  scope: string[];
-  relatedRegulations: string[];
-}
-
 export interface Evidence {
   id: string;
   projectId: string;
@@ -163,9 +146,15 @@ export interface DashboardData {
   activities: Activity[];
 }
 
-export interface EvidenceSummary {
-  total: number;
-  inProgress: number;
-  underReview: number;
-  completed: number;
+export interface PerspectiveLeader {
+  id: number;
+  name: string;
+  role: string;
+  avatar: string;
 }
+
+export interface OverviewItem {
+  label: string;
+  value: string | string[];
+}
+

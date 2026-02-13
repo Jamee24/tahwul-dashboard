@@ -31,7 +31,29 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+}
 
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+}
 @media (max-width: 768px) {
   .statsGrid {
     grid-template-columns: 1fr;
@@ -71,7 +93,29 @@
   gap: 24px;
   margin-bottom: 24px;
 }
+@media (max-width: 1024px) {
+  .dashboardWidgetsRow {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+}
 
+@media (max-width: 768px) {
+  .dashboardWidgetsRow {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardWidgetsRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+}
 @media (max-width: 1024px) {
   .dashboardWidgetsRow {
     grid-template-columns: 1fr;

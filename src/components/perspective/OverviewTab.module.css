@@ -1,0 +1,153 @@
+.contentTable {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .contentTable {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentTable {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentTable {
+    padding: 12px;
+  }
+}
+
+.tableRow {
+  border-top: none;
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+}
+
+@media (max-width: 1024px) {
+  .tableRow {
+    gap: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableRow {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tableRow {
+    gap: 4px;
+    padding: 8px 0;
+  }
+}
+
+.tableRow:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.tableLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  border-radius: 10px;
+  background-color: #1B35570D;
+  padding: 8px;
+  width: 160px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .tableLabel {
+    font-size: 13px;
+    padding: 6px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableLabel {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tableLabel {
+    font-size: 11px;
+    padding: 4px;
+  }
+}
+
+.tableValue {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.6;
+  border-radius: 10px;
+  background-color: #1B35570D;
+  padding: 8px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .tableValue {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableValue {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tableValue {
+    font-size: 11px;
+    padding: 4px;
+  }
+}
+
+.tableText {
+  margin: 0 0 12px 0;
+}
+
+.tableText:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .contentTable {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .tableRow {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  .tableLabel {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .tableValue {
+    width: 100%;
+  }
+}
